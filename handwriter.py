@@ -1,31 +1,3 @@
-# from PIL import Image, ImageDraw, ImageFont
-#
-# # Load the handwriting font
-# font_path = "Paty.ttf"
-# font_size = 36
-# font = ImageFont.truetype(font_path, font_size)
-#
-# # Create a blank image
-# image_width = 400
-# image_height = 200
-# image = Image.new("RGB", (image_width, image_height), (255, 255, 255))
-# draw = ImageDraw.Draw(image)
-#
-# # Define the text to render
-# text = "Hello, World!"
-#
-# # Calculate the position to center the text
-# text_width, text_height = draw.textsize(text, font=font)
-# x = (image_width - text_width) // 2
-# y = (image_height - text_height) // 2
-#
-# # Render the text on the image
-# draw.text((x, y), text, font=font, fill=(0, 0, 0))
-#
-# # Save or display the image
-# image.save("handwritten_text.png")
-# image.show()
-
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
 from reportlab.pdfgen import canvas
